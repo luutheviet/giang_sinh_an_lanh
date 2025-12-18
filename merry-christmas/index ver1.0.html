@@ -423,8 +423,11 @@
                         statusDiv.innerText = "🖐 Bung Quà & Ảnh"; statusDiv.style.color = "#FFA500";
                     }
                 } else {
-                    state = 'TREE'; 
-                    statusDiv.innerText = "🎄 Giang Sinh An Lanh 🎄"; statusDiv.style.color = "#FFF";
+                    // KHI RỜI TAY KHỎI CAMERA:
+					// Không gán lại state = 'TREE' nữa. 
+					// Chỉ cập nhật dòng thông báo để người dùng biết hệ thống vẫn đang chờ tay.
+					statusDiv.innerText = "👋 Đang chờ bàn tay của bạn..."; 
+					statusDiv.style.color = "#FFF";
                 }
             });
 
